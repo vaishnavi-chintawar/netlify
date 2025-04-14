@@ -157,7 +157,7 @@ const App = () => {
     <div style={containerStyle}>
       <div style={mainContainerStyle}>
         <div style={topNavStyle}>
-          <h2 style={{ margin: 0 }}>Tasky</h2>
+          <h2 style={{ margin: 0 }}>Task Mangement</h2>
           <div style={navButtonsStyle}>
             <button style={buttonStyle} onClick={() => setShowTaskModal(true)}>
               + Add Task

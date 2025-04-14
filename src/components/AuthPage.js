@@ -36,7 +36,7 @@ const AuthPage = ({ onLoginSuccess, onSignupSuccess, setAuthMessage }) => {
   return (
     <div style={containerStyle}>
       <div style={leftStyle}>
-        <h2 style={headingStyle}>Tasky</h2>
+        <h2 style={headingStyle}>Task Mangement</h2>
         {isSignUp ? (
           <SignupForm
             onSignupSuccess={onSignupSuccess}
