@@ -27,7 +27,10 @@ export function initData() {
     ];
     localStorage.setItem(USERS_KEY, JSON.stringify(defaultUsers));
   }
+
   if (!localStorage.getItem(TASKS_KEY)) {
+    // Adding 11 tasks by default.
+    const todayStr = new Date().toISOString().substring(0, 10);
     const defaultTasks = [
       {
         id: "a2aeea20-5398-42cb-8ee1-8831869a6628",
@@ -36,7 +39,7 @@ export function initData() {
         responsible_person: "sagar",
         completed: false,
         user: "vaishnavi",
-        start_date: new Date().toISOString().substring(0, 10),
+        start_date: todayStr,
       },
       {
         id: "3e797f84-ccf1-4c3f-becc-bc0122e3e27b",
@@ -45,9 +48,89 @@ export function initData() {
         responsible_person: "vaibhav",
         completed: false,
         user: "sagar",
-        start_date: new Date().toISOString().substring(0, 10),
+        start_date: todayStr,
       },
-      // Add more tasks if desired…
+      {
+        id: "task-3",
+        description: "Signup Page",
+        deadline: "2025-04-21T15:00",
+        responsible_person: "vaishnavi",
+        completed: false,
+        user: "OM@gmail.com",
+        start_date: todayStr,
+      },
+      {
+        id: "task-4",
+        description: "Dashboard Implementation",
+        deadline: "2025-04-22T17:00",
+        responsible_person: "sagar",
+        completed: false,
+        user: "sagar@gmail.com",
+        start_date: todayStr,
+      },
+      {
+        id: "task-5",
+        description: "Settings Page",
+        deadline: "2025-04-23T10:00",
+        responsible_person: "OM@gmail.com",
+        completed: false,
+        user: "OM@gmail.com",
+        start_date: todayStr,
+      },
+      {
+        id: "task-6",
+        description: "Notification Setup",
+        deadline: "2025-04-24T13:00",
+        responsible_person: "sagar",
+        completed: false,
+        user: "vaishnavi",
+        start_date: todayStr,
+      },
+      {
+        id: "task-7",
+        description: "User Profile Page",
+        deadline: "2025-04-26T09:00",
+        responsible_person: "vaibhav",
+        completed: false,
+        user: "Vaishnavi",
+        start_date: todayStr,
+      },
+      {
+        id: "task-8",
+        description: "API Integration",
+        deadline: "2025-04-27T16:00",
+        responsible_person: "sagar",
+        completed: false,
+        user: "sagar",
+        start_date: todayStr,
+      },
+      {
+        id: "task-9",
+        description: "Unit Testing",
+        deadline: "2025-04-28T11:00",
+        responsible_person: "OM@gmail.com",
+        completed: false,
+        user: "OM@gmail.com",
+        start_date: todayStr,
+      },
+      {
+        id: "task-10",
+        description: "Bug Fixes",
+        deadline: "2025-04-29T18:00",
+        responsible_person: "vaishnavi",
+        completed: false,
+        user: "vaishnavi",
+        start_date: todayStr,
+      },
+      {
+        id: "task-11",
+        description: "Documentation",
+        deadline: "2025-04-30T14:00",
+        responsible_person: "vaibhav",
+        completed: false,
+        user: "sagar@gmail.com",
+        start_date: todayStr,
+      },
     ];
     localStorage.setItem(TASKS_KEY, JSON.stringify(defaultTasks));
   }
